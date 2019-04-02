@@ -7,7 +7,7 @@
 <body>
     <form action="#"
           th:action="@{/process}"
-          th:object="${job}}"
+          th:object="${job}"
           method="post">
         Title :<input type="text" th:field="*{title}"/>
         <span th:if="${#fields.hasErrors('title')}"
